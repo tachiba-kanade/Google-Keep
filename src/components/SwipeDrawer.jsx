@@ -2,7 +2,8 @@ import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
-
+import handleDrawerOpen from '@mui/material/Drawer'
+import { AppBar } from '@mui/material';
 //components
 import HeaderBar from './HeaderBar';
 import NavList from './NavList';
@@ -62,10 +63,8 @@ function SwipeDrawer() {
 
     return (
         <Box sx={{ display: 'flex' }}>
-            <HeaderBar
-                open={open}
-                handleDrawer={handleDrawer}
-            />
+            <HeaderBar open={open} handleDrawer={handleDrawerOpen} 
+            AppBar={AppBar} />
             <Drawer variant="permanent" open={open}>
                 <DrawerHeader></DrawerHeader>
                 <NavList />
