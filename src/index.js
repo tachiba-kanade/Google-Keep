@@ -12,7 +12,7 @@ root.render(
 reportWebVitals();*/
 import React from "./react.js";
 import ReactDOM from 'react-dom';
-import App from './App'; // Assuming 'App' is your main component.
+import App from './App.js'; // Assuming 'App' is your main component.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
